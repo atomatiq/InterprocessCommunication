@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <UseWPF>true</UseWPF>
+        <OutputType>WinExe</OutputType>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <TargetFramework>net7.0-windows</TargetFramework>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
+    </ItemGroup>
+
+    <Target Name="CopyFiles" AfterTargets="CoreBuild">
+        <ItemGroup>
+            <AddinItem Include="$(TargetDir)**\*.*"/>
+        </ItemGroup>
+
+        <PropertyGroup>
+            <AddinDir>$(SolutionDir)TwoWay\Backend\bin\Debug\</AddinDir>
+        </PropertyGroup>
+
+        <Copy SourceFiles="@(AddinItem)" DestinationFolder="$(AddinDir)"/>
+    </Target>
+
+</Project>

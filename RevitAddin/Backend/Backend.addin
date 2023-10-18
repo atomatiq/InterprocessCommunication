@@ -1,0 +1,10 @@
+﻿<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>Backend</Name>
+        <Assembly>Backend/Backend.dll</Assembly>
+        <AddInId>5B748F50-641F-45AC-8269-A574EE5202A3</AddInId>
+        <FullClassName>Backend.Application</FullClassName>
+        <VendorId>Development</VendorId>
+        <VendorDescription></VendorDescription>
+    </AddIn>
+</RevitAddIns>
