@@ -654,7 +654,7 @@ public partial class MainViewModel : ObservableObject
 The complete code example is available in the repository, and you can run it on your machine by following a few steps:
 
 - Run "Build Solution."
-- Run "Run OneWay\Backend."
+- Run "Run OneWay/Backend."
 
 The application will automatically launch the Server and Client, and you will see the full output of the messages transmitted via the NamedPipe in the IDE console.
 
@@ -1138,8 +1138,8 @@ var project = new Project
 
 # Conclusion
 
-In this article, we have explored how Named Pipes, primarily used for inter-process communication, can be used in scenarios necessitating data exchange between applications running on different .NET versions.
-Dealing with code that needs to be maintained across multiple versions, a well-considered Inter-Process Communication (IPC) strategy can be valuable, providing key benefits such as:
+In this article, we explored how Named Pipes, primarily used for Inter-Process Communication (IPC), can be used in scenarios requiring data exchange between applications running on different .NET versions.
+Dealing with code that needs to be maintained across multiple versions, a well-considered IPC strategy can be valuable, providing key benefits such as:
 
 - Dependency conflict resolution
 - Enhancing performance
