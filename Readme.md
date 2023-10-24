@@ -5,11 +5,12 @@
 </p>
 
 We all know how challenging it is to maintain large programs and keep up with progress.
-Developers of plugins for Revit understand this better than anyone else. We have to write our programs in .NET Framework 4.8 and forgo modern and fast libraries.
+Developers of plugins for Revit understand this better than anyone else.
+We have to write our programs in .NET Framework 4.8 and forgo modern and fast libraries.
 Ultimately, this affects users who are forced to use outdated software.
 
 In such scenarios, splitting the application into multiple processes using Named Pipes appears to be an excellent solution due to its performance and reliability.
-In this article, we will discuss how to create and use Named Pipes to communicate between the Revit application running on .NET 4.8 and its plugin running on .NET 7.
+In this article, we discuss how to create and use Named Pipes to communicate between the Revit application running on .NET 4.8 and its plugin running on .NET 7.
 
 # Table of Contents
 
