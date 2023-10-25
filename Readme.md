@@ -5,11 +5,12 @@
 </p>
 
 We all know how challenging it is to maintain large programs and keep up with progress.
-Developers of plugins for Revit understand this better than anyone else. We have to write our programs in .NET Framework 4.8 and forgo modern and fast libraries.
+Developers of plugins for Revit understand this better than anyone else.
+We have to write our programs in .NET Framework 4.8 and forgo modern and fast libraries.
 Ultimately, this affects users who are forced to use outdated software.
 
 In such scenarios, splitting the application into multiple processes using Named Pipes appears to be an excellent solution due to its performance and reliability.
-In this article, we will discuss how to create and use Named Pipes to communicate between the Revit application running on .NET 4.8 and its plugin running on .NET 7.
+In this article, we discuss how to create and use Named Pipes to communicate between the Revit application running on .NET 4.8 and its plugin running on .NET 7.
 
 # Table of Contents
 
@@ -653,7 +654,7 @@ public partial class MainViewModel : ObservableObject
 The complete code example is available in the repository, and you can run it on your machine by following a few steps:
 
 - Run "Build Solution."
-- Run "Run OneWay\Backend."
+- Run "Run OneWay/Backend."
 
 The application will automatically launch the Server and Client, and you will see the full output of the messages transmitted via the NamedPipe in the IDE console.
 
@@ -1137,8 +1138,8 @@ var project = new Project
 
 # Conclusion
 
-In this article, we have explored how Named Pipes, primarily used for inter-process communication, can be used in scenarios necessitating data exchange between applications running on different .NET versions.
-Dealing with code that needs to be maintained across multiple versions, a well-considered Inter-Process Communication (IPC) strategy can be valuable, providing key benefits such as:
+In this article, we explored how Named Pipes, primarily used for Inter-Process Communication (IPC), can be used in scenarios requiring data exchange between applications running on different .NET versions.
+Dealing with code that needs to be maintained across multiple versions, a well-considered IPC strategy can be valuable, providing key benefits such as:
 
 - Dependency conflict resolution
 - Enhancing performance
